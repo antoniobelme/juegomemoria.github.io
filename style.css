@@ -1,0 +1,374 @@
+:root {
+  --soft-red: #FAA750;
+  --arena: #E0D81F;
+  --tostao: #F5AB67;
+  --pink-soul: #EB78B3;
+  --purple: #9000D6;
+  --laila: #CDD0F8;
+  --soft-arena:#F4EFD3;
+  --hight-blue: #48ADE0;
+  --gray-blue: #6C8794;
+  /* Dummy */
+  --skin: #f6c09c;
+  --skin-dark: #dfac8b;
+  --background: #ed4042;
+  --red: #ed2860;
+  --dark-red: #680524;
+  --black: #00243a;
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+  float: none;
+}
+body{
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  float: none;
+}
+
+.childModify {
+  width: 100px;
+  height: 100px;
+  background-color: var(--arena);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px #9B79F7;
+  transform: rotate(10deg) scale(1.1);
+  /* transform: scale(1.1); */
+}
+.navContainer{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--laila);
+  z-index: 2;
+}
+main {
+  min-height: 700px;
+  min-width: 100%;
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background-color: var(--soft-arena);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.containerLeft{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerGrid {
+  width: 490px;
+  height: 660px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+.child {
+  width: 150px;
+  height: 150px;
+  background-color: var(--soft-red);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #43346B;
+}
+.containerRight {
+  width: 50%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.spaceImage{
+  width: 300px;
+  height: 300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+/* Dummy */
+.ears{
+  width:30px;
+  height:30px;
+  background: var(--skin);
+  border-radius:50%;
+  position:absolute;
+  /* z-index: 1; */
+}
+.earsLeft{
+  top: 60px;
+  right: -20px;
+}
+.earsRight{
+  top: 60px;
+  left: -20px;
+}
+.neck{
+  width:50px;
+  height:100px;
+  background: var(--skin);
+  position:absolute;
+ /*  z-index: 6; */
+  top: 120px;
+  left: 25px;
+}
+
+.head {
+  width:100px;
+  height:170px;
+  background: var(--skin);
+  border-radius:50px;
+  position:relative;
+  /* z-index: 5; */
+}
+.front{
+  width:75px;
+  height:20px;
+  background: var(--skin);
+  border-radius:50px;
+  position:absolute;
+  top:33px;
+  left:12px;
+}
+.eye {
+  width:30px;
+  height:30px;
+  background: var(--white);
+  border-radius:50%;
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eye-left {
+  top:45px;
+  left:23px;
+}
+.eye-right {
+  top:45px;
+  right:23px;
+}
+.eyePupil {
+  width:10px;
+  height:10px;
+  background-color: black;
+  border-radius: 100%;
+}
+.bottom{
+  width:100px;
+  height:110px;
+  background: var(--black);
+  border-top-right-radius:35px;
+  border-top-left-radius:35px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+  position:absolute;
+  top:85px;
+}
+.nose{
+  width:30px;
+  height:30px;
+  background: var(--skin);
+  position:absolute;
+  border-radius:50%;
+  top:75px;
+  left:35px;
+}
+.mouth{
+  width:50px;
+  height:25px;
+  background: var(--dark-red);
+  position:absolute;
+  overflow: hidden;
+  top:110px;
+  left:25px;
+  border-radius: 0px 0px 100px 100px;
+}
+.teeth{
+  width: 40px;
+  height: 8px;
+  background: white;
+  border-bottom-right-radius:5px;
+}
+.tongue{
+  width: 28px;
+  height: 20px;
+  position:absolute;
+  top:12px;
+  background: var(--red);
+  border-top-right-radius:5px;
+}
+/* dummy end*/
+
+.buttom {
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px #43346B;
+}
+.buttomPlay{
+  background-color: var(--pink-soul);
+}
+.buttomValidate{
+  background-color: var(--purple);
+}
+/* pop up */
+.modalContainer{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(147, 25, 199, 0.59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events:fill;
+  transition: opacity 0.3s ease;
+}
+.modal{
+  max-width: 100%;
+  width: 600px;
+  height: 300px;
+  background-color: var(--laila);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.buttomClose {
+  background-color: var(--pink-soul);
+}
+.modalText{
+  text-align: center;
+  font-size: 60px;
+  color:var(--dark-red)
+}
+footer{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.footerContainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--laila);
+  z-index: 3;
+}
+.inactive {
+  display: none;
+}
+.modifyModal {
+  width: 600px;
+  height: 600px;
+}
+.modifyImage{
+  margin-bottom: 50px;
+}
+.modifyText{
+  font-size: 45px;
+}
+@media (max-height: 600px) {
+  .containerLeft{
+    width: 70%;
+  }
+  .containerGrid {
+    width: 460px;
+    height: 345px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 15px 15px;
+  }
+  .child {
+    width: 100px;
+    height: 100px;
+  }
+  .containerRight {
+    width: 30%;
+  }
+  .spaceImage{
+    width: 150px;
+    height: 250px;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    height: 80%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .containerLeft{
+    width: 100%;
+    height: 70%;
+  }
+  .containerGrid {
+    width: 270px;
+    height: 365px;
+    gap: 15px 15px;
+  }
+  .child {
+    width: 80px;
+    height: 80px;
+  }
+  .childModify {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+  }
+  .containerRight {
+    width: 100%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: [line1] 10% [line2] 40% [line3] 40% [line3] 10%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .spaceImage{
+    width: 300px;
+    height: 300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+}
